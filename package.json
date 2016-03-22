@@ -1,0 +1,26 @@
+{
+	"name": "prolog",
+	"displayName": "Prolog",
+	"description": "Syntax highlighting for Prolog.",
+	"version": "0.0.1",
+	"publisher": "B3nD3lan3y",
+	"engines": {
+		"vscode": "^0.10.10"
+	},
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "prolog",
+			"aliases": ["Prolog", "prolog"],
+			"extensions": [".pro", ".pl"],
+			"configuration": "./prolog.configuration.json"
+		}],
+		"grammars": [{
+			"language": "prolog",
+			"scopeName": "source.prolog",
+			"path": "./syntaxes/prolog.tmLanguage"
+		}]
+	}
+}
